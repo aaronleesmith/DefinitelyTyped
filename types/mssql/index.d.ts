@@ -210,6 +210,7 @@ export interface config {
 export declare class ConnectionPool extends events.EventEmitter {
     public connected: boolean;
     public connecting: boolean;
+    public healthy: boolean;
     public driver: string;
     public constructor(config: config, callback?: (err?: any) => void);
     public constructor(connectionString: string, callback?: (err?: any) => void);
